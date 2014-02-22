@@ -1,0 +1,37 @@
+@import url(http://fonts.googleapis.com/css?family=Condiment);
+@import url(http://fonts.googleapis.com/css?family=Revalia);
+@import url(http://fonts.googleapis.com/css?family=Italianno);
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC);
+
+
+.smurfy {
+	box-shadow: 2px -2px 2px 2px rgba(36, 32, 33, 0.5);
+	background-color: rgba(36, 32, 33, 0.5);
+	padding: 1%;
+}
+
+body {
+
+  background: url(Minastirith.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.custom-h1 {
+	color: white;
+}
+
+.custom-h1 {
+font-family: 'AlegreyaSansSC', Helvetica Neue Light, Helvetica Neue, Helvetica, sans-serif;
+font-weight: 120;
+font-size: 50px;
+}
+
+h2 {
+font-family: 'Italianno', Helvetica Neue Light, Helvetica Neue, Helvetica, sans-serif;
+font-weight: 140;
+font-size: 50px;
+color: #757575;
+}
