@@ -1,0 +1,16 @@
+<% @pics.each do |pic| %>
+
+<div class="smurfy span4 text-center">
+		<h1 class="custom-h1">
+			House <br/> <%= pic.title %>
+		</h1>
+		<br/>
+		<h2>
+		<%= pic.subtitle %>
+		</h2>
+		<br/>
+		<%= pic.message %>
+
+</div>
+
+<% end %>
