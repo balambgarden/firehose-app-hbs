@@ -2,7 +2,7 @@
 	<h2 class='custom-h2'>Enter your Allegiance</h2>
 	<%= simple_form_for @pic do |f| %>
 		<%= f.input :title, label: 'Enter your House', placeholder: 'Which of the 7 Kingdoms' %>
-		<%= f.input :subtitle %>
+		<%= f.input :subtitle, label: 'House Motto'%>
 		<%= f.input :message %>
 
 		<%= f.submit "Save", :class => 'btn btn-primary' %>
