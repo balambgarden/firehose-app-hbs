@@ -19,18 +19,18 @@
     </a>
      
     <!-- Be sure to leave the brand out there if you want it shown -->
-    <a class="brand" href="#">The Fellowship of the Ring</a>
      
+     <%= link_to 'The Fellowship of the Ring', root_path, :class => 'brand' %>
     <!-- Everything you want hidden at 940px or less, place within here -->
     <div class="nav-collapse collapse">
     <!-- .nav, .navbar-search, .navbar-form, etc -->
     	<ul class ="nav">
     		<li>
-    			<%= link_to 'Rohan', '#' %>
+    			<%= link_to 'See your Allies', pics_path %>
     		</li>
     		<!-- the # is where you put your link!!-->
     		<li>
-    			<%= link_to 'Mordor', '#' %>
+    			<%= link_to 'Select Your House', new_pic_path %>
     		</li>
     	</ul>
     </div>

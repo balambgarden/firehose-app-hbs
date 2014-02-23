@@ -1,5 +1,6 @@
-<% @pics.each do |pic| %>
-
+<% @pics.each_slice (3) do |slice| %>
+	<% slice.each do |pic| %>
+	<div class='row'>
 <div class="smurfy span4 text-center">
 		<h1 class="custom-h1">
 			House <br/> <%= pic.title %>
@@ -7,10 +8,17 @@
 		<br/>
 		<h2>
 		<%= pic.subtitle %>
+
 		</h2>
+
 		<br/>
+		<%= image_tag pic.image %>
+
+		<br/>
+
 		<%= pic.message %>
 
 </div>
 
+	<% end %>
 <% end %>

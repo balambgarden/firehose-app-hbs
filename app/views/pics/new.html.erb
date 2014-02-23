@@ -3,7 +3,9 @@
 	<%= simple_form_for @pic do |f| %>
 		<%= f.input :title, label: 'Enter your House', placeholder: 'Which of the 7 Kingdoms' %>
 		<%= f.input :subtitle, label: 'House Motto'%>
+
 		<%= f.input :message %>
+		<%= f.input :image, label: "Upload your crest" %>
 
 		<%= f.submit "Save", :class => 'btn btn-primary' %>
 	<% end %>
