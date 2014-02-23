@@ -9,4 +9,17 @@ class PicsController < ApplicationController
 
 		@pic = Pic.new
 	end
+
+	def create
+		Pic.create( pics_params )
+		redirect_to pics_path
+	end
+
+
+	private
+
+	def pics_params
+		params.require(:pic).permit(:title, :subtitle, :message)
+	end
+
 end

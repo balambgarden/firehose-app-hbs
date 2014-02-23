@@ -1,11 +1,11 @@
-<div class = "smurphy">
-
+<div class = "smurfy span4 offset4 text-center">
+	<h2>Enter your data</h2>
 	<%= simple_form_for @pic do |f| %>
-		<%= f.input :title %>
+		<%= f.input :title, label: 'Enter the title', placeholder: 'Lanisters are coming' %>
 		<%= f.input :subtitle %>
 		<%= f.input :message %>
 
-		<%= f.submit "Save" %>
+		<%= f.submit "Save", :class => 'btn btn-primary' %>
 	<% end %>
 
 </div>
