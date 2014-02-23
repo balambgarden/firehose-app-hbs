@@ -8,7 +8,9 @@ CarrierWave.configure do |config|
   }
   config.fog_directory  = ENV['AWS_BUCKET']                     # required
   config.storage = :fog
+  
   else
+  
   config.storage = :file
   end
 end
